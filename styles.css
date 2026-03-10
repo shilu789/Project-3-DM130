@@ -1,0 +1,438 @@
+/*  
+Author: Shilu Manandhar
+File Name: styles.css
+Date: 03/02/2026
+*/
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+video,
+h1,
+h3,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+}
+
+body {
+  background-color: #f6eee4;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style rules for skip navigation link */
+.skip {
+  position: absolute;
+  left: -999px;
+}
+
+.skip:focus {
+  color: #fff;
+  background-color: #2a1f14;
+  text-decoration: none;
+  padding: 0.5%;
+  top: auto;
+  left: auto;
+  right: 1px;
+  z-index: 1;
+}
+
+/* ========================================== */
+/* Style rules for mobile viewport            */
+/* ========================================== */
+
+.mobile,
+.mobile-tablet {
+  display: block;
+}
+
+/* Step 4: Hide these elements in mobile view */
+.tab-desk,
+.desktop,
+#nav-links {
+  display: none;
+}
+
+/* Step 5: Margin for mobile h1 */
+.mobile h1 {
+  margin: 2% 0 0 3%;
+}
+
+/* Mobile Nav Styles */
+.mobile-nav a {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+.mobile-nav a.nav-icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f6eee4;
+  padding: 2%;
+}
+
+.nav-icon div {
+  height: 40px;
+  width: 40px;
+  color: #2a1f14;
+}
+
+/* Global Nav Background */
+nav {
+  background-color: #2a1f14;
+}
+
+/* FAQ Styles - Added after .tel-link a per instructions */
+.tel-link a {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#questions p {
+  cursor: pointer;
+}
+
+#answer {
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#answer h2 {
+  display: none;
+}
+
+/* ========================================== */
+/* Media Query for Tablet Viewport            */
+/* ========================================== */
+@media screen and (min-width: 481px) {
+  /* Step 6: Hide mobile specific nav and header on tablet */
+  .mobile,
+  .mobile-nav {
+    display: none;
+  }
+
+  /* Show tablet/desktop navigation */
+  .tab-desk {
+    display: block;
+  }
+
+  /* Step 1: Tablet nav area style rules */
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  /* Step 2: Tablet nav list items */
+  nav li {
+    display: block;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  /* Step 3: Tablet nav links */
+  nav li a {
+    display: block;
+    color: #f6eee4;
+    text-decoration: none;
+    padding: 0.5em 2em;
+  }
+
+  nav li a.active {
+    border-bottom: 3px solid #f6eee4;
+  }
+}
+
+/* Tablet Viewport: Style rules for footer area */
+footer {
+  overflow: auto;
+}
+
+.copyright {
+  float: left;
+  width: 65%;
+}
+
+.social {
+  float: right;
+  width: 25%;
+}
+/* ========================================== */
+/* Media Query for Desktop Viewport           */
+/* ========================================== */
+@media screen and (min-width: 1025px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile-tablet {
+    display: none;
+  }
+
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+/* Main Content Area */
+main {
+  padding: 2%;
+  font-family: "Lora", serif;
+}
+/* Main Content */
+main {
+  padding: 2%;
+  font-family: "Lora", serif;
+}
+
+main p {
+  font-size: 1.25em;
+}
+
+main h3 {
+  padding-top: 2%;
+}
+
+main ul {
+  list-style-type: square;
+}
+
+/* Hero section */
+#hero h1 {
+  font-family: Verdana, Arial, sans-serif;
+  text-align: center;
+  color: #2a1f14;
+  font-size: 2.5em;
+}
+
+/* Links */
+.link {
+  color: #4d3319;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Action text */
+.action {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.round {
+  border-radius: 6px;
+}
+
+#info ul {
+  margin-left: 10%;
+}
+/* Contact section */
+#contact {
+  text-align: center;
+}
+
+#contact,
+#form h2 {
+  text-align: center;
+}
+
+.tel-link {
+  background-color: #2a1f14;
+  padding: 2%;
+  width: 80%;
+  margin: 0 auto;
+}
+.tel-link a {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style rules for contact section form elements */
+
+fieldset,
+input,
+textarea {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 2%;
+}
+
+form #submit {
+  margin: 0 auto;
+  display: block;
+  padding: 2%;
+  background-color: #78593a;
+  color: #f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
+}
+
+/****Partnership PAGE TABLE STYLING******/
+
+.sponsorship-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+}
+
+.sponsorship-table th,
+.sponsorship-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.sponsorship-table thead th {
+  background-color: #3b2b1f;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.sponsorship-table tbody tr:nth-child(even) {
+  background-color: #f6f2ee;
+}
+
+.sponsorship-table td ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.sponsorship-table td ul li {
+  margin-bottom: 6px;
+}
+
+.sponsorship-table td:first-child {
+  font-weight: bold;
+}
+
+.sponsorship-table td:nth-child(2) {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+/****Partnership page - left box styling****/
+.mobile-tablet {
+  background-color: #f6f2ee;
+  border: 1px solid #cbbfb5;
+  padding: 16px 20px;
+  max-width: 260px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-tablet h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #cbbfb5;
+  padding-bottom: 6px;
+}
+
+.mobile-tablet p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.mobile-tablet .note {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/***Styling table and box in one box***/
+.partnership-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.table-wrapper {
+  flex: 1;
+}
+
+/* ***********Footer *************** */
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #2a1f14;
+  color: #f6eee4;
+  padding: 1% 0;
+}
+
+footer a {
+  color: #f3e6d8;
+  text-decoration: none;
+}
+
+.social img {
+  display: inline-block;
+  padding: 4%;
+  width: 30px;
+  margin: 0 5px;
+}
+
+/* Style rules for table */
+table {
+  border: 1px solid #2a1f14;
+  border-collapse: collapse;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1%;
+}
+
+th,
+td {
+  border: 1px solid #2a1f14;
+  padding: 1%;
+}
+
+th {
+  background-color: #2a1f14;
+  color: #fff;
+  font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+  background-color: #deccba;
+}
